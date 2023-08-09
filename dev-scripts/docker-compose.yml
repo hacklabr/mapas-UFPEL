@@ -15,7 +15,7 @@ services:
       - ../compose/local/config.d:/var/www/config/local.d
 
       # themes and plugins
-      - ../plugins/SamplePlugin:/var/www/src/plugins/SamplePlugin
+      - ../themes/MapasUFPel:/var/www/src/themes/MapasUFPel
       - ../plugins/MultipleLocalAuth:/var/www/src/plugins/MultipleLocalAuth
 
     environment:
