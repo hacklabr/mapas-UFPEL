@@ -5,7 +5,7 @@ return [
     'logo.title' => 'Mapa Cultural',
 
     /* Segunda linha do logo configurável */
-    'logo.subtitle' => 'de Pelotas',
+    'logo.subtitle' => 'AGIMOS',
 
     /* Cores da logo */
     'logo.colors' => [
