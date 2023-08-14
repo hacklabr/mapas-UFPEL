@@ -1,1 +1,1 @@
-FROM hacklab/mapasculturais:v7.0.0-RC-cli
+FROM hacklab/mapasculturais:7.0.0-RC-cli
