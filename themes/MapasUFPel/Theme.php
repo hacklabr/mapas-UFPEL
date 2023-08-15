@@ -1,5 +1,5 @@
 <?php
-namespace MapasUFPEL;
+namespace MapasUFPel;
 
 use MapasCulturais\App;
 

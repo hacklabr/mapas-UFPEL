@@ -1,6 +1,6 @@
-# Mapas Culturais Base Project
+# Mapa Cultural da UFPEL
 
-A ideia desse projeto é facilitar o deploy da plataforma Mapas Culturais e ser um repositório aglutinador das partes do sistema, viabilizando um alto controle das versões de cada uma das peças do sistema (plugins, tema, core do Mapas Culturais, PostgreSQL/PostGIS, redis etc). 
+Repositório do Mapa Cultural da UFPEL
 
 É recomendado a utilização do [Git Flow](https://danielkummer.github.io/git-flow-cheatsheet/index.pt_BR.html) para a estrutura de branches e o [Versionamento Semântico](https://semver.org/lang/pt-BR/) para as tags, da seguinte maneira:
 
@@ -39,36 +39,8 @@ Seguindo a lógica do _Versionamento Semântico_, quando chegar o momento do lan
 - **plugins** - pasta com os plugins desenvolvidos exclusivamente para o projeto
     - **SamplePlugin** - esqueleto de plugin para demostração e para servir de base para o desenvolvimento de outros plugins
 - **themes** - pasta com os temas desenvolvidos exclusivaente para o projeto
-    - **SampleTheme** - esqueleto de tema filho de Subsite para demostração e para servir de base para o desenvolvimento de outros temas
+    - **MapasUFPel** - tema do Mapa Cultural da UFPEL
 
-# Guia rápido para início de novo projeto
-Antes de tudo certifique-se de ter os pacotes _git_, _docker_ e _docker-compose_ instalados e estar utilizando sistema operacional Linux ou MacOS. 
-
-_Nos exemplos é usado o comando sudo para que os scripts tenham os privilégios requeridos pelo docker._
-
-### Criando repositório do projeto
-Crie um repositório vazio no github ou gitlab (usarei de exemplo o nome _https://github.com/organizacao/meu-mapas_)
-
-Clone o repositório do projeto base no seu computador
-```sh
-$ git clone https://github.com/mapasculturais/mapasculturais-base-project.git meu-mapas
-$ cd meu-mapas
-```
-
-Substitua a url do remote origin para a url de seu repositório
-```sh
-meu-mapas/$ git remote set-url origin https://github.com/organizacao/meu-mapas
-
-# ou, se você tiver sua chave no github
-meu-mapas/$ git remote set-url origin git@github.com:organizacao/meu-mapas
-```
-
-Dê git push no repositório para enviar a versão inicial para seu repositório vazio.
-```sh
-meu-mapas/$ git push
-To github.com:organizacao/meu-mapas
- * [new branch]      master -> master
-```
 
 ## Ambiente de desenvolvimento
 
