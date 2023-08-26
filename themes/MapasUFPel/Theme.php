@@ -26,6 +26,11 @@ class Theme extends \MapasCulturais\Themes\BaseV2\Theme {
                 ],
             ]);
         });
+
+        $this->enqueueStyle("app-v2", "logo-footer", "css/logo-footer.css");
+        $app->hook("template(<<*>>.<<*>>.main-footer-links):after", function(){
+            $this->part("logo-footer");
+        });
     }
 
     // protected function _publishAssets() {
