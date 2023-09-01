@@ -63,3 +63,30 @@ $home-register: #002842;
 
 @import '../../../BaseV2/assets-src/sass/theme-BaseV2';
 
+
+.lgpd-document {
+    border-bottom: 1px solid $black;
+    margin-bottom: 1em;
+    
+
+    h2 {
+        margin-bottom: 0.8em;
+        text-align: center;
+    }
+
+    &:last-of-type {
+        border-bottom:0;
+    }
+}
+
+.lgpd-date {
+    margin-bottom: 1em;
+    font-weight: bold;
+    font-style: italic;
+
+    text-align: center;
+}
+
+.lgpd-creditos {
+    font-weight: bold;
+}
