@@ -16,6 +16,11 @@ class Theme extends \MapasCulturais\Themes\BaseV2\Theme {
 
         $app = App::i();
 
+        $app->hook('app.init:after', function() use ($app) {
+           $this->config['report.agent'][] = "comunidadesTradicional";
+           $this->config['report.agent'][] = "pessoaDeficiente";
+        });
+
          // Manifest do five icon
         $app->hook('GET(site.webmanifest)', function() use ($app) {
             /** @var \MapasCulturais\Controller $this */
