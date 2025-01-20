@@ -21,6 +21,7 @@ services:
 
       # themes and plugins
       - ../themes/MapasUFPel:/var/www/src/themes/MapasUFPel
+      - ../plugins/SpamDetector:/var/www/src/plugins/SpamDetector
       - ../plugins/MultipleLocalAuth:/var/www/src/plugins/MultipleLocalAuth
 
     environment:
