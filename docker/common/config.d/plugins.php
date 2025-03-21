@@ -5,6 +5,7 @@ return [
         'AdminLoginAsUser' => ['namespace' => 'AdminLoginAsUser'],
         'MultipleLocalAuth' => [ 'namespace' => 'MultipleLocalAuth' ],
         'SpamDetector',
+        'ValuersManagement',
         'MapasBlame' => [
             'namespace' => 'MapasBlame',
             'config' => [
