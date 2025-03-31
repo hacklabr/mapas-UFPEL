@@ -9,6 +9,7 @@ services:
       - ./docker-data/public-files:/var/www/html/files
       - ./docker-data/assets:/var/www/html/assets
       - ./Certificado/:/dados/mapasculturais/Certificado
+      - ./em-breve:/var/www/html/em-breve
 
   ##### versão sem ssl
       # - ./docker/production/nginx.conf:/etc/nginx/conf.d/default.conf
@@ -44,6 +45,7 @@ services:
       - ./docker/common/config.d:/var/www/config/common.d
       - ./docker/production/config.d:/var/www/config/config.d
       - ./docker/common/lgpd-terms:/var/www/config/lgpd-terms
+      - ./em-breve:/var/www/html/em-breve
     links:
       - db
       - redis
