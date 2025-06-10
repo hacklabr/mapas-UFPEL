@@ -1,0 +1,8 @@
+#!/bin/bash
+PROJECT_FOLDER="$1"
+BACKUP_FOLDER="$2"
+
+rsync -ar "$PROJECT_FOLDER/docker-data/private-files" "$BACKUP_FOLDER/docker-data/private-files"
+rsync -ar "$PROJECT_FOLDER/docker-data/public-files" "$BACKUP_FOLDER/docker-data/public-files"
+rsync -ar "$PROJECT_FOLDER/docker-data/logs" "$BACKUP_FOLDER/docker-data/logs"
+cp -a "$PROJECT_FOLDER/.env" "$BACKUP_FOLDER/.env"
