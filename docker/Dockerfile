@@ -12,5 +12,5 @@ COPY docker/production/config.d /var/www/config/config.d
 
 WORKDIR /var/www
 
-RUN chown -R root:root src public config
+RUN chown -R root:root src html config
 
