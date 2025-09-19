@@ -23,6 +23,7 @@ services:
       - ../themes/MapasUFPel:/var/www/src/themes/MapasUFPel
       - ../plugins/SpamDetector:/var/www/src/plugins/SpamDetector
       - ../plugins/MultipleLocalAuth:/var/www/src/plugins/MultipleLocalAuth
+      - ../plugins/Accessibility:/var/www/src/plugins/Accessibility
 
     environment:
       - PENDING_PCACHE_RECREATION_INTERVAL=10
