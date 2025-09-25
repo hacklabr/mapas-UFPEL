@@ -15,4 +15,4 @@
 	url = https://github.com/mapasculturais/plugin-ValuersManagement.git
 [submodule "plugins/Accessibility"]
 	path = plugins/Accessibility
-	url = git@github.com:mapasculturais/plugin-Accessibility.git
+	url = https://github.com/mapasculturais/plugin-Accessibility.git
